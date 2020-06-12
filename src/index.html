@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="display: flex; justify-content: center; align-items: center; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../style/loader.css" type="text/css">
+    <title>Roda Putar</title>
+</head>
+<body>
+    <div class="con-loader">
+    <div class="cycle kedip-kedip"></div>
+    <div class="cycle kedip-kedip"></div>
+    <div class="cycle kedip-kedip"></div>
+    </div>
+<div class="container" style="display: none">
+    <div class="judul">Lucky Roulette</div>
+    <div style="font-size: 24px;">[Prototype]</div>
+    <!--Spinner-->
+    <div class="con-roda">
+    <img src="../img/roda.png" alt="roda-putar">
+    <img src="../img/get.png" alt="get" style="width: 40px; height: 37.6px;">
+    <button id='roll' type="button" class="putar">SPIN</button>
+    <div class="con-chance">My Chance
+    <div class="num-chance">0X</div>
+    </div>
+    </div>
+    <!--chance-->
+    <!--ket-->
+    <div class="con-kotak">
+    <button type="button" class="kotak">
+    <span class="text">Get Your Chance</span>
+    <img src="../img/baseline_keyboard_arrow_down_black_48dp.png" alt="arrow">
+    </button>
+    <button type="button" class="kotak">
+    <span class="text">Prize Received</span>
+    <img src="../img/baseline_keyboard_arrow_down_black_48dp.png" alt="arrow">
+    </button>
+    </div>
+    <!--alert-->
+    <div class="con-alert" style="display: none;">
+        <div class="alert info">
+            <div class="head"></div>
+            <div class="text"></div>
+            <button type="button" class="alert-btn">OKAY</button>
+        </div>
+        <div class="alert green" id="quest">
+            <div class="head green-style">Answer to Get Chance</div>
+            <label for="quest">Hasil dari penjumlahan </label>
+            <label for="quest" id="question1"></label>
+            <label for="quest"> + </label>
+            <label for="quest" id="question2"></label>
+            <input type="text" maxlength="2">
+            <button type="button" class="alert-btn">Give Up</button>
+            <button type="button" class="alert-btn">Submit</button>
+        </div>
+        <div class="alert green" id="history">
+            <div class="head green-style">Price History</div>
+            <button type="button" class="alert-btn" style="display: block; margin: 10px auto;">Close</button>
+        </div>
+    </div>
+    <audio src></audio>
+    <audio src="../sfx/menu_click_06.ogg" id="menu"></audio>
+    <audio src id="rollSfx"></audio>
+    <iframe src="../sfx/silence.mp3" allow="autoplay"></iframe>
+    <audio id="bgSound" src="../sfx/wizmen04.ogg" autoplay loop></audio>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

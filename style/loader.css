@@ -1,0 +1,30 @@
+/*html{display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100%;}*/
+/*body{background-color: #121212; margin: 0;}*/
+.top-bar-proggres{width: 0%; height: 3px; background-color: aquamarine; animation: load 3s forwards;}
+@keyframes load{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+.cycle{width: 20px; height: 20px; border-radius: 100%; margin: 10px 5px; background-color: antiquewhite;}
+.load-spinner{background-color: transparent; animation: muter 1.5s infinite; border: 5px solid transparent; border-left: 5px solid #fff;}
+@keyframes muter{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.kedip-kedip{display: inline-block; background-color: #fff;}
+.kedip-kedip{animation: kedip1 1s linear infinite;}
+.kedip-kedip:nth-child(2){animation: kedip2 1s linear infinite;}
+.kedip-kedip:nth-child(3){animation: kedip3 1s linear infinite;}
+@keyframes kedip1{
+    66%{opacity: 0;}
+    99%{opacity: 1;}
+}
+@keyframes kedip2{
+    0%{opacity: 0;}
+    33%{opacity: 1;}
+}
+@keyframes kedip3{
+    33%{opacity: 0;}
+    66%{opacity: 1;}
+}
+
